@@ -13,7 +13,7 @@ Connection established!
 ```
 
 3. Select the Custom algorithm in placer section of the nsplacer tool.
-![custom-placer](res/custom-placer.png "custom-placer")
+<img style="float: right; width: 50%;" src="res/custom-placer.png">
 4. Click place to start the evalaution
 
 ## How it works
