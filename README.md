@@ -14,7 +14,9 @@ Connection established!
 
 3. Select the Custom algorithm in placer section of the nsplacer tool.
 
-<img src="res/custom-placer.png" width="48">
+<p align="center">
+<img src="res/custom-placer.png" width="150">
+</p>
 
 4. Click place to start the evalaution
 
