@@ -1,1 +1,1 @@
-wsAddress=ws://127.0.0.1:60100/ws
+wsAddress=wss://nsplacer.labs.b-com.com/ws
