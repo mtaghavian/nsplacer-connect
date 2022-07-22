@@ -24,10 +24,10 @@ Connection established!
 Nsplcer-connect connects to nsplacer tool via the websocket. It waits for the placement requests from the nsplacer tool, executes a sample placement algorithm (you can implement your own placement algorithm), then replies to the server with the provided placement.
 
 #### Placement requests
-The placement requests include the network graph (the nodes and links, with their corresponding available resources), the service graph (the nodes and links, with their corresponding required resources), and the placement parameters.
+The placement request is defined on the class *CustomPlacerRequest*, and it includes the network graph (the nodes and links, with their corresponding available resources), the service graph (the nodes and links, with their corresponding required resources), and the placement parameters.
 
 #### Placement responses
-The placement response is returned by 4 lists (2 lists for node placement, and the others for link placement). 
+The placement response is defined on the class *CustomPlacerResponse*, and it includes 4 lists (2 lists for node placement, and the others for link placement). The *placedNetworkNodes* list contains the network node labels, over which the service graph nodes are placed, by the order which is defined in *placedServiceNodes*. The *placedPaths* list contains the network paths (a list of network link labels), over which the service graph links are placed, by the order which is defined in *placedServiceLinks*.
 
 ## About
 Masoud Taghavian (masoud.taghavian@gmail.com)
