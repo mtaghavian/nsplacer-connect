@@ -29,5 +29,22 @@ The placement request is defined on the class *CustomPlacerRequest*, and it incl
 #### Placement responses
 The placement response is defined on the class *CustomPlacerResponse*, and it includes 4 lists (2 lists for node placement, and the others for link placement). The *placedNetworkNodes* list contains the network node labels, over which the service graph nodes are placed, by the order which is defined in *placedServiceNodes*. The *placedPaths* list contains the network paths (a list of network link labels), over which the service graph links are placed, by the order which is defined in *placedServiceLinks*.
 
+## A sample execution
+The following output is a result of a sample execution of the network-connect.
+
+```
+Trying to connect to ws://127.0.0.1:60100/ws...
+Connection established!
+Received placement request! ({"networkTopology":"BtEurope.graphml.xml","snCPU":"1000","snStorage":"1000","snBandwidth":"10","snLatency":"1","serviceTopology":"DaisyChain","serviceSize":3,"sgCPU":"1","sgStorage":"1","sgBandwidth":"1","sgLatency":"10","timeout":1000,"routing":"UCS","strategy":"Custom","approach":"NodeBased","terminationType":"FirstFound","shuffle":false})
+  Trying to place...
+  Placement finished! Placer could place the service successfully!
+Received placement request! ({"networkTopology":"BtEurope.graphml.xml","snCPU":"1000","snStorage":"1000","snBandwidth":"10","snLatency":"1","serviceTopology":"DaisyChain","serviceSize":3,"sgCPU":"1","sgStorage":"1","sgBandwidth":"1","sgLatency":"10","timeout":1000,"routing":"UCS","strategy":"Custom","approach":"NodeBased","terminationType":"FirstFound","shuffle":false})
+  Trying to place...
+  Placement finished! Placer could place the service successfully!
+Received placement request! ({"networkTopology":"BtEurope.graphml.xml","snCPU":"1000","snStorage":"1000","snBandwidth":"10","snLatency":"1","serviceTopology":"DaisyChain","serviceSize":3,"sgCPU":"1","sgStorage":"1","sgBandwidth":"1","sgLatency":"10","timeout":1000,"routing":"UCS","strategy":"Custom","approach":"NodeBased","terminationType":"FirstFound","shuffle":false})
+  Trying to place...
+  Placement finished! Placer failed to place the service!
+```
+
 ## About
 Masoud Taghavian (masoud.taghavian@gmail.com)
