@@ -6,8 +6,12 @@ This is a custom placement algorithm implementation, which can connect to our Ne
 1. Build with `mvn package`
 2. Run with `java -jar target/nsplacer-connect.jar`
 Make sure that the connection is successfully established by receiving this message:
-`Trying to connect to wss://nsplacer.labs.b-com.com/ws...`
-`Connection established!`
+
+```
+Trying to connect to wss://nsplacer.labs.b-com.com/ws...
+Connection established!
+```
+
 3. Select the Custom algorithm in placer section of the nsplacer tool.
 ![custom-placer](res/custom-placer.png "custom-placer")
 4. Click place to start the evalaution
